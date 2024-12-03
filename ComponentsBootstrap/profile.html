@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link r, el="stylesheet" href="bootstrap.bundle.min.js">
+    <title></title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-3 bg-dark">
+                <input type="time" name="horario" id="time">
+            </div>
+            <div class="col-6 p-3 bg-dark text-end">
+                <button class="btn bg-info" id="notificacaoBtn">Notificações
+                    <span class="badge bg-black border border-light">99+</span>
+                </button>
+                <div class="toast-container position-absolute top-0 end-0 p-3">
+                    <div class="toast" role="alert">
+                        <div class="toast-header">
+                            <strong class="me-auto">Notificação</strong>
+                            <small>Agora</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Você tem uma nova notificação!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn bg-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Item1</a></li>
+                        <li class="dropdown-item"><a href="#">Item2</a></li>
+                        <li class="dropdown-item"><a href="#">Item 3</a></li>
+                        <li class="dropdown-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="dropdown-item"><a href="FaleConsoco.html">Fale conosco</a></li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#perfilModal">Ver perfil</button>
+
+                <!-- Modal para exibir imagem em destaque -->
+                    <div class="modal fade" id="perfilModal" tabindex="-1" aria-labelledby="perfilModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="perfilModalLabel">Perfil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="paisagem.jpg" alt="Perfil" class="img-fluid" width="100px" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <br><br>
+                <!-- noticia collapse -->
+                <button class="btn bg-danger btn-outline-info" aria-expanded="false" aria-controls="card1"
+                    data-bs-toggle="collapse" data-bs-target=".card1">
+                    Noticia 1 (collapse)
+                </button>
+                <div class="card1">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit beatae voluptatibus,
+                        perferendis
+                        quos aliquam incidunt quibusdam iste, nobis minima soluta distinctio sequi accusamus. Maiores
+                        voluptatibus necessitatibus, minus adipisci porro deserunt!
+                        Quisquam consequuntur animi in voluptatibus soluta, repellat, nesciunt repellendus provident
+                        deleniti rem, culpa corporis obcaecati cupiditate veritatis quo harum praesentium? Vero tenetur,
+                        quisquam maiores iure debitis harum molestias esse ducimus?
+                    </div>
+                </div>
+
+                <!-- Accordions -->
+                <div class="accordion my-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#experiencia" aria-controls="experiencia">
+                                Experiência Profissional
+                            </button>
+                        </h2>
+                        <div id="experiencia" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                por enquanto apenas como estudante, mas quero trabalhar para
+                                
+                                ganhar mais e mais experiencia
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#habilidades" aria-expanded="false" aria-controls="habilidades">
+                                Habilidades
+                            </button>
+                        </h2>
+                        <div id="habilidades" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To precisando descobrir ainda
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#formacao" aria-expanded="false" aria-controls="formacao">
+                                Formação
+                            </button>
+                        </h2>
+                        <div id="formacao" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- popover de informação -->
+        <a href="" class="me-4" data-bs-toggle="tooltip" title="Facebook">Facebook</a><br>
+            <a href="" class="me-4" data-bs-toggle="tooltip" title="Twitter">Twitter</a><br>
+            <a href="" data-bs-toggle="tooltip" title="LinkedIn">LinkedIn</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Rodapé com links de redes sociais e tooltips -->
+        <footer class="text-center bg-dark py-3 mt-5">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="Informações"
+            data-bs-content="Telefone ou Whatsapp:14 988378111 email:guilhermemelo326@gmail.com">
+    Informações de contato</button>
+        </footer>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script>
+        // Inicializar tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Exibir toast ao clicar no botão de notificações
+        document.getElementById('notificacaoBtn').addEventListener('click', function () {
+            var toast = new bootstrap.Toast(document.querySelector('.toast'))
+            toast.show()
+        })
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>

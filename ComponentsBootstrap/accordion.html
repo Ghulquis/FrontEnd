@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Accordion</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!-- Elemento pai do accordion -->
+                <div class="accordion" id="accordionID">
+                    <!-- Elemento filho do accordion -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#area1" aria-expanded="true">Accordion -> Item1
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse show collapse" id="area1" data-bs-parent="accordionID">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quia!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#area2" aria-expanded="true">Accordion -> Item2
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse show collapse" id="area2" data-bs-parent="#accordionID">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quia!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#area3" aria-expanded="true">Accordion -> Item3
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse show collapse" id="area3" data-bs-parent="#accordionID" aria-labelledby="titulo3">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quia!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Slide show</title>
+    <style>
+        /* Centraliza as setas dentro da imagem */
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            display:inline;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30%; 
+        }
+
+       
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <!-- Carrossel de imagens -->
+                <div id="carlinhos" class="carousel carousel-fade" data-bs-ride="carousel">
+                    <!-- SlideShow do carrossel -->
+                    <div class="carousel-inner">
+                        <!-- Imagem 1 -->
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="gato.jpeg" alt="" class="d-block w-75 mx-auto">
+                        </div>
+
+                        <!-- Imagem 2 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="joia.jpeg" alt="" class="d-block w-75 mx-auto">
+                        </div>
+                        <!-- Imagem 3 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="gato!!!!.jpeg" alt="" class="d-block w-75 mx-auto">
+                        </div>
+                        <!-- Imagem 4 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="pexe.jpeg" alt="" class="d-block w-75 mx-auto">
+                        </div>
+                        <!-- Imagem 5 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="paia.webp" alt="" class="d-block w-75 mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Botões de navegação centralizados na imagem -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carlinhos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carlinhos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
